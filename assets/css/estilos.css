@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root {
+    --darkColor: rgb(41, 37, 37);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,15 +18,16 @@ html {
 body {
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
-    
+    color: var(--darkColor);
 }
 
 
 .container {
+    
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
-    
+   
 }
 
 .header {
@@ -31,11 +36,18 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 5rem;
+    
+    
 }
 
 .logo {
     font-size: 4rem;
     padding: 5rem;
+}
+
+a.logo {
+    color: rgb(41, 37, 37);
+    text-decoration: none;
 }
 
 .logo span{
@@ -57,6 +69,7 @@ body {
 }
 
 .principal {
+    
     height: 85vh;
     background: linear-gradient(rgba(0,0,0,0.20) 0%,rgba(0,0,0.5) 100%),
                 url("/assets/img/hero_strange.jpg");
@@ -72,4 +85,5 @@ body {
 .pagina {
     height: 100vh;
     scroll-snap-align: start;
+    
 }
