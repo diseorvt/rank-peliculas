@@ -65,7 +65,6 @@ a.logo {
 }
 
 .principal {
-    
     height: 90vh;
     background: linear-gradient(rgba(0,0,0,0.20) 0%,rgba(0,0,0.5) 100%),
     url("/assets/img/hero_strange.jpg");
@@ -103,10 +102,12 @@ a.logo {
         display: block;
     }
     .principal {
+        margin-top: 2rem;
         width: 100%;
-        height: calc(100vh - 1rem - 10vh);
+        height: calc(100vh - 2rem - 10vh);
     }
     .principal p {
         width: 95%;
+        font-size: 14px;
     }
 }
