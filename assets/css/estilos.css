@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    
+}
+
+.header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.logo {
+    font-size: 4rem;
+    padding: 5rem;
+}
+
+.logo span{
+    color: steelblue;
+    font-weight: bold;
+}
+
+.navegacion {
+    width: 20rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navegacion a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: steelblue;
+}
+
+.principal {
+    height: 85vh;
+    background: linear-gradient(rgba(0,0,0,0.20) 0%,rgba(0,0,0.5) 100%),
+                url("/assets/img/hero_strange.jpg");
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    padding: 0 0 2rem 2rem;
+
+}
+
+.pagina {
+    height: 100vh;
+    scroll-snap-align: start;
+}
