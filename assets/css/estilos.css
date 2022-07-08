@@ -23,9 +23,6 @@ body {
 
 
 .container {
-    
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
     height: 100vh;
    
 }
@@ -35,10 +32,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5rem;
-    
-    
+    padding: 0 3rem;    
 }
+
 
 .logo {
     font-size: 4rem;
@@ -70,20 +66,40 @@ a.logo {
 
 .principal {
     
-    height: 85vh;
+    height: 90vh;
     background: linear-gradient(rgba(0,0,0,0.20) 0%,rgba(0,0,0.5) 100%),
-                url("/assets/img/hero_strange.jpg");
+    url("/assets/img/hero_strange.jpg");
     background-position: center center;
     background-size: cover;
     display: flex;
     align-items: flex-end;
     color: white;
     padding: 0 0 2rem 2rem;
-
+    
 }
 
-.pagina {
-    height: 100vh;
-    scroll-snap-align: start;
-    
+@media (max-width:630px){
+    .header {
+        height: 15vh;
+        display: block;
+        padding: 1rem 0 0 0;
+        text-align: center;
+        
+    }
+    .logo {
+        font-size: 2rem;
+        
+    }
+
+    .navegacion {
+        width: 100%;
+        display: block;
+    }
+    .navegacion a{
+        padding-top: 1rem;
+        display: block;
+    }
+    .principal {
+        height: 85vh;
+    }
 }
