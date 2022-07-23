@@ -123,7 +123,7 @@ a.logo {
 .formulario {
     padding-top: 5rem;
     width: 90%;
-    height: 80vh;
+    height: 75vh;
     margin: 0 auto;
 }
 
@@ -133,6 +133,7 @@ a.logo {
     flex-direction: column;
     padding: 2rem;
     border: none;
+    overflow-y: auto;
 }
 
 .formulario__contenido legend {
@@ -145,7 +146,7 @@ a.logo {
     margin: 1rem 0;
     border: none;
     background-color: rgb(236, 236, 236);
-    height: 3rem;
+    height: 2rem;
     padding: 2rem;
 }
 
@@ -167,7 +168,7 @@ a.logo {
 
 .footer {
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     height: 10vh;
     background-color: var(--darkColor);
@@ -202,5 +203,6 @@ a.logo {
 
     .footer {
         font-size: 11px;
+        
     }
 }
