@@ -24,7 +24,7 @@ body {
 
 .container {
     height: 100vh;
-   
+
 }
 
 .header {
@@ -32,7 +32,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 3rem;    
+    padding: 0 3rem;
 }
 
 
@@ -46,7 +46,7 @@ a.logo {
     text-decoration: none;
 }
 
-.logo span{
+.logo span {
     color: steelblue;
     font-weight: bold;
 }
@@ -66,8 +66,8 @@ a.logo {
 
 .principal {
     height: 90vh;
-    background: linear-gradient(rgba(0,0,0,0.20) 0%,rgba(0,0,0.5) 100%),
-    url("/assets/img/hero_strange.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0.5) 100%),
+        url("/assets/img/hero_strange.jpg");
     background-position: center center;
     background-size: cover;
     display: flex;
@@ -76,10 +76,10 @@ a.logo {
     padding: 0 0 2rem 2rem;
     font-size: 1.8rem;
     padding-bottom: 5rem;
-    
+
 }
 
-@media (max-width:630px){
+@media (max-width:630px) {
     .header {
         height: 10vh;
         display: block;
@@ -87,25 +87,30 @@ a.logo {
         text-align: center;
 
     }
+
     .logo {
         display: block;
         font-size: 2rem;
         padding: 0;
-        
+
     }
+
     .navegacion {
         width: 100%;
         display: block;
     }
-    .navegacion a{
+
+    .navegacion a {
         margin: 1rem 0;
         display: block;
     }
+
     .principal {
         margin-top: 2rem;
         width: 100%;
         height: calc(100vh - 2rem - 10vh);
     }
+
     .principal p {
         width: 95%;
         font-size: 14px;
@@ -126,15 +131,27 @@ a.logo {
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    border: none;
 }
 
 .formulario__contenido legend {
     text-align: center;
+
 }
 
 .texto {
     width: 50%;
     margin: 1rem 0;
+    border: none;
+    background-color: rgb(236, 236, 236);
+    height: 3rem;
+    padding: 2rem;
+}
+
+#comentario {
+    border: none;
+    background-color: rgb(236, 236, 236);
+    padding: 2rem;
 }
 
 #enviar {
@@ -157,7 +174,29 @@ a.logo {
     align-items: center;
 }
 
-@media (max-width:630px){
+@media (max-width:630px) {
+
+    .formulario {
+
+        height: 75vh;
+    }
+
+    .texto {
+        width: 100%;
+
+    }
+
+    #comentario {
+        border: none;
+        background-color: rgb(236, 236, 236);
+        height: 9rem;
+        padding: 2rem;
+    }
+
+    #enviar {
+        width: 100%;
+    }
+
     .footer {
         font-size: 11px;
     }
