@@ -159,8 +159,8 @@ a.logo {
 .carrusel-contenedor .carrusel-principal .derecha {
     position: absolute;
     border: none;
-    background: rgba(0, 0, 0, 0.3);
-    font-size: 25px;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 30px;
     height: 50%;
     top: calc(50%-25%);
     line-height: 40px;
