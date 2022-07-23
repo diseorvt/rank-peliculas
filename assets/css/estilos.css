@@ -118,6 +118,103 @@ a.logo {
     }
 }
 
+
+/* Página peliculas */
+
+/* Carrusel */
+
+.carrusel-contenedor {
+    width: 90%;
+    margin: 4rem auto;
+}
+
+.contendor-titulo-controles {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 2rem;
+}
+
+.carrusel-contenedor .carrusel-principal {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.contendor-titulo-controles .indicadores button {
+    background-color: black;
+    height: 4px;
+    width: 12px;
+    cursor: pointer;
+    border: none;
+
+} 
+
+.contendor-titulo-controles .indicadores button:hover,
+.contendor-titulo-controles .indicadores button.activo {
+    background-color: red;
+} 
+
+.carrusel-contenedor .carrusel-principal .izquierda,
+.carrusel-contenedor .carrusel-principal .derecha {
+    position: absolute;
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 25px;
+    height: 50%;
+    top: calc(50%-25%);
+    line-height: 40px;
+    width: 50px;
+    color: white;
+    cursor: pointer;
+    z-index: 500;
+    transform: 0.2s ease all;
+}
+
+.carrusel-contenedor .carrusel-principal .izquierda:hover,
+.carrusel-contenedor .carrusel-principal .derecha:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.carrusel-contenedor .carrusel-principal .izquierda {
+    left: 0;
+}
+
+.carrusel-contenedor .carrusel-principal .derecha {
+    right: 0;
+}
+
+.contenedor-carrusel {
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.contenedor-carrusel .carrusel {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.contenedor-carrusel .carrusel .peliculas {
+    min-width: 20%;
+    transition: 0.3s ease all;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+.contenedor-carrusel .carrusel .peliculas.hover{
+    transform: scale(1.2);
+    transform-origin: center;
+}
+
+.contenedor-carrusel .carrusel .peliculas img {
+    width: 100%;
+    vertical-align: top;
+}
+
+
+/* min32 */
+
 /* Pagina Formulario */
 
 .formulario {
@@ -142,7 +239,7 @@ a.logo {
 }
 
 .texto {
-    width: 50%;
+    width: 100%;
     margin: 1rem 0;
     border: none;
     background-color: rgb(236, 236, 236);
@@ -185,8 +282,18 @@ a.logo {
         height: 75vh;
     }
 
+    .formulario__contenido legend {
+        font-size: 14px;
+    
+    }
+
+
+    label {
+        font-size: 11px;
+    }
+
     .texto {
-        width: 100%;
+        font-size: 11px;
 
     }
 
